@@ -46,13 +46,13 @@ All methods are able to be chained together. Combine as many as you wish. **NOTE
 
 HOW TO USE:
 
-  const container=document.getElementById('thePositionedElement');
+    const container=document.getElementById('thePositionedElement');
 
-  const body=document.querySelector('body');
+    const body=document.querySelector('body');
 
-  const swiper=new Swiper(container, "swipeObject");
+    const swiper=new Swiper(container, "swipeObject");
 
-  swiper.setMaxWidth(600).setEventObject(body).setWait(20000).swipe();
+    swiper.setMaxWidth(600).setEventObject(body).setWait(20000).swipe();
 
 
 **The above code does the following:
