@@ -5,18 +5,18 @@ This is a javascript api is an object that requires only 2 parameters to create 
 
 
 REQUIRES PARAMETERS:
-  1. A CSS positioned element, preferably a div but that isn't necessary.  The height of the div will become the height of the moving object and the width of the div will become the distance the object travels.
+    1. A CSS positioned element, preferably a div but that isn't necessary.  The height of the div will become the height of the moving object and the width of the div will become the distance the object travels.
 
-  2. An id must be assigned for the moving object.  This id will be a string and will be assigned to a newly creative div within the code and should be included in your CSS and assigned the preferred background image for the object being swiped.
+   2. An id must be assigned for the moving object.  This id will be a string and will be assigned to a newly creative div within the code and should be included in your CSS and assigned the preferred background image for the object being swiped.
 
 
 WHAT THE CODE WILL LOOK LIKE:
 
-  const container=document.getElementById('thePositionedElement');
+    const container=document.getElementById('thePositionedElement');
 
-  const swiper=new Swiper(container, "swipeObject");
+    const swiper=new Swiper(container, "swipeObject");
 
-  swiper.swipe();
+    swiper.swipe();
 
 
 THAT'S IT! That's all that's required to create the swiper.  There are many additional features you can add to the swiper if you require more specifications. Here is a list of all the available methods on the object:
