@@ -39,20 +39,23 @@ THIS SWIPER ALLOWS FOR CHAINING!
 All methods are able to be chained together. Combine as many as you wish. **NOTE** The last method in the chain must be the swipe() method in order to initiate the Swipe api.
 
 HOW TO USE:
-const container=document.getElementById('thePositionedElement');\r\n
+const container=document.getElementById('thePositionedElement');
 
-const body=document.querySelector('body');\r\n
+const body=document.querySelector('body');
 
-
-const swiper=new Swiper(container, "swipeObject");\r\n
+const swiper=new Swiper(container, "swipeObject");
 
 
 swiper.setMaxWidth(600).setEventObject(body).setWait(20000).swipe();
 
 **The above code does the following:
+
 -gets the positioned element by its id and sets it to the container variable
+
 -gets the body of the DOM and sets it to the body variable
+
 -creates a new swiper object, passing in the container and an id that will be given to the swiper object
+
 -sets the max with of the swiper to 600px, sets the event object to the body, sets the waiting time between events to 20000ms, and initiates the swiper which will begin after the set waiting time.
 
 
