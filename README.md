@@ -1,5 +1,5 @@
 # Swipe
-Creates a swiper best for mobile users to let them know to swipe left or right
+Creates a swiper, best for mobile users to let them know to swipe left or right
 
 This is a javascript api is an object that requires only 2 parameters to create it.
 
