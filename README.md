@@ -10,9 +10,9 @@ REQUIRES PARAMETERS:
 
 WHAT THE CODE WILL LOOK LIKE:
 
-const container=document.getElementById('thePositionedElement');
-const swiper=new Swiper(container, "swipeObject");
-swiper.swipe();
+const container=document.getElementById('thePositionedElement'); \r\n
+const swiper=new Swiper(container, "swipeObject");\r\n
+swiper.swipe();\r\n
 
 THAT'S IT! That's all that's required to create the swiper.  There are many additional features you can add to the swiper if you require more specifications. Here is a list of all the available methods on the object:
 
@@ -36,10 +36,10 @@ THIS SWIPER ALLOWS FOR CHAINING!
 All methods are able to be chained together. Combine as many as you wish. **NOTE** The last method in the chain must be the swipe() method in order to initiate the Swipe api.
 
 HOW TO USE:
-const container=document.getElementById('thePositionedElement');
-const body=document.querySelector('body');
+const container=document.getElementById('thePositionedElement');\r\n
+const body=document.querySelector('body');\r\n
 
-const swiper=new Swiper(container, "swipeObject");
+const swiper=new Swiper(container, "swipeObject");\r\n
 
 swiper.setMaxWidth(600).setEventObject(body).setWait(20000).swipe();
 
