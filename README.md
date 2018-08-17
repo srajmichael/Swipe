@@ -4,14 +4,14 @@ Creates a swiper, best for mobile users to let them know to swipe left or right
 This is a javascript api is an object that requires only 2 parameters to create it.
 
 
-##REQUIRES PARAMETERS:
+## REQUIRES PARAMETERS:
 
     1. A CSS positioned element, preferably a div but that isn't necessary.  The height of the div will become the height of the moving object and the width of the div will become the distance the object travels.
 
     2. An id must be assigned for the moving object.  This id will be a string and will be assigned to a newly creative div within the code and should be included in your CSS and assigned the preferred background image for the object being swiped.
 
 
-##WHAT THE CODE WILL LOOK LIKE:
+## WHAT THE CODE WILL LOOK LIKE:
 
     const container=document.getElementById('thePositionedElement');
 
@@ -23,7 +23,7 @@ This is a javascript api is an object that requires only 2 parameters to create 
 THAT'S IT! That's all that's required to create the swiper.  There are many additional features you can add to the swiper if you require more specifications. Here is a list of all the available methods on the object:
 
 
-##METHODS:
+## METHODS:
 
     setMaxWidth() - Takes 1 parameter. Sets the widest screen width you wish for the swiper to appear on. DEFAULT set to 600
 
@@ -44,7 +44,7 @@ THIS SWIPER ALLOWS FOR CHAINING!
 All methods are able to be chained together. Combine as many as you wish. **NOTE** The last method in the chain must be the swipe() method in order to initiate the Swipe api.
 
 
-##HOW TO USE:
+## HOW TO USE:
 
     const container=document.getElementById('thePositionedElement');
 
@@ -55,7 +55,7 @@ All methods are able to be chained together. Combine as many as you wish. **NOTE
     swiper.setMaxWidth(600).setEventObject(body).setWait(20000).swipe();
 
 
-**The above code does the following:
+**The above code does the following:**
 
   -gets the positioned element by its id and sets it to the container variable
 
