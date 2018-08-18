@@ -65,4 +65,9 @@ All methods are able to be chained together. Combine as many as you wish. **NOTE
 
   -sets the max with of the swiper to 600px, sets the event object to the body, sets the waiting time between events to 20000ms, and initiates the swiper which will begin after the set waiting time.
 
-
+## RECOMMENDED CSS FOR CONTAINER
+  position:fixed;
+  bottom:10px;
+  width:50%;
+  height:60px;
+  left: 25%;
