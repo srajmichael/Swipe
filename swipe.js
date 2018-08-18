@@ -48,12 +48,21 @@ function Swiper(fingerContainer, fingerId){
   //ACTIVATE SWIPE
   this.swipe=function(){
     if(screen.width<=this.maxScreenWidth  && screen.height<=this.maxScreenHeight){
-      let blockWidth=this.fingerContainer.offsetWidth;
+      let containerHeight=this.fingerContainer.offsetHeight;
+      let fingerWidth=containerHeight;
+      console.log(fingerWidth);
+      let blockWidth=(this.fingerContainer.offsetWidth)-fingerWidth;
+      console.log(this.fingerContainer.offsetWidth);
       let waitT=this.waitTime/1000;
       //ADDS FINGER TO CONTAINER
       let addFinger=(fingerContainer)=>{
         let finger=document.createElement("DIV");
         finger.id=this.fingerId;
+        finger.style.height="100%";
+        finger.style.width=fingerWidth;
+        finger.style.backgroundRepeat="no-repeat";
+        finger.style.backgroundSize="contain";
+        finger.style.position="relative";
         finger.style.transition=`transform ${this.transitionSpeed}ms linear, opacity ${this.transitionSpeed}ms ease-in`;
         finger.style.transform=`matrix(1,0,0,1,${blockWidth},0)`;
         finger.style.opacity="1";
@@ -67,7 +76,7 @@ function Swiper(fingerContainer, fingerId){
         setTimeout(function(){
           finger.style.transform="matrix(1,0,0,1,0,0)";
           finger.style.opacity="0";
-        },0);
+        },100);
         setTimeout(function(){
           finger.parentElement.removeChild(finger);
         },this.transitionSpeed);
@@ -87,13 +96,10 @@ function Swiper(fingerContainer, fingerId){
       //CHECKS TO SEE IF EVENT OBJECT IS SET
       //IF NOT EVENT OBJECT, SWIPE STARTS AFTER WAIT TIME
       if(this.eventObj){
-        console.log(this.eventObj);
         this.eventObj.addEventListener(this.eventType,(e)=>{
 
           time=0;
         });
-      }else{
-        console.log("object=" + this.eventObj);
       }
     }
 
